@@ -107,7 +107,53 @@ header {
 .buy-overlay-2 {
     position: absolute;
 }
+.hamburger-icon {
+    display: block;
+    cursor: pointer;
+}
 
+/* Add the following CSS code for the mobile menu */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(21, 21, 22);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.mobile-menu.active {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: calc(100vw - 100px);
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+.mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+}
 /* Position and style these elements according to your design */
 
 
@@ -299,6 +345,35 @@ header {
         font-weight: 600px;
         transform: translate(-50%, -50%);
     }
+    
+    .hamburger-icon {
+        display: block;
+    }
+
+    /* Add the following CSS code for the mobile menu */
+    
+    #navigation-link-container {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+    .close-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      
 }
 
 
