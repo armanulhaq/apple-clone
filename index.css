@@ -6,288 +6,520 @@
 
 body {
     margin: 0px;
-    font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 header {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    background-color: #f9f9fb;
+    justify-content: center;
+    justify-content: space-between;
     height: 45px;
-    
+    padding: 0 10px;
 }
 
-.apple-logo {
-    height: 17px;
-    width: 17px;
-}
 
 #navbar {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    justify-content: center;
     justify-content: space-between;
-    width: 65vw;
-    margin: auto;
 }
 
-.navbar-link {
+.navbar-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #363636;
     text-decoration: none;
     font-size: 12px;
 }
 
-.promotion-text-container-light{
+.apple-logo {
+    height: 17px;
+    width: 17px;
+    margin-right: 10px; /* Add some space */
+}
+
+.icons-box {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    align-items: center;
-    height: 620px;
-    width: 100vw;
-    font-weight:900;
-    background-color: #f5f5f7;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.promotion-text-container-light {
+    position: relative;
     margin-bottom: 10px;
 }
 
-.promotion-product-heading {
-    font-weight: bold;
+.promotion-text-container-dark {
+    position: relative;
+    margin-bottom: 10px;
 }
 
-#main-promotion-img {
-    height: 390px;
-    width: 100vw;
+
+.overlay-text {
+    position: absolute;
+    top: 20%; /* Center vertically. Adjust as needed */
+    left: 50%; /* Center horizontally. Adjust as needed */
+    transform: translate(-50%, -50%); /* Ensures the text is centered */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* You may need to add color, padding, backgrounds etc. to the text for visibility */
 .promotion-product-heading {
+    color: #363636;
     font-size: 50px;
-    height: auto;
     font-weight: 600; 
-    color: #000000;
 }
+
 .promotion-product-description {
     font-size: 25px;
     font-weight: 400;
     color: #000000;
 }
 
-#buy-link-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: #2667ff;
-    font-weight: 200;
-    padding-top: 10px;
-    width: 100vw;
-}
-
-#buy-links {
-    font-size: larger;
-    margin-right: 40px;
-}
-
-#ipad-promotion-img {
-    height: 280px;
-    width: 100vw;
-}
-
-.promotion-text-container-dark{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-between;
-    padding-top: 80px;
-    margin: auto;
-    align-items: center;
+#main-promotion-img {
     height: 620px;
     width: 100vw;
-    font-weight:900;
-    background-color: black;
-    color:white;
-    margin-bottom: 10px;
-}
-#iphone-promotion-img {
-    height: 400px;
-}
-
-.promotion-product-heading-dark {
-    font-size: 50px;
-    height: auto;
-    font-weight: 600; 
-    color: #fff;
-}
-.promotion-product-description-dark {
-    font-size: 25px;
-    font-weight: 400;
-    color: #fff;
 }
 
 
-.multiple-column-promotion-container{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-between;
-    height: 550px;
-    font-weight:900;
-    width: calc(100vw - 20px);
-    color:white;
-    margin-left:10px;
-    margin-right: 10px;
-    margin-bottom: 15px;
-}
 
-.left-promotion {
-    height: 550px;
-    width: 49vw;
-    position: relative;
-
-}
-
-.right-promotion {
-    height: 550px;
-    width: 49vw;    
-    position: relative;
-}
-
-.multiple-column-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .image-link {
-    display: block;
     position: relative;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-  }
-
-.title-overlay {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: bold;
-    font-size: 35px;
-    text-align: center;
-}
-
-.description-overlay {
-    position: absolute;
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-}
-
-.buy-overlay {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 28%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    color: #2667ff;
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
-}
-
-.subtitle-overlay {
-    position: absolute;
-    top: 21%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #d90429;
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
-}
-
-.title-overlay-2 {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: bold;
-    font-size: 35px;
-    text-align: center;
+    display: block;
 }
 
 
-.description-overlay-2 {
-    position: absolute;
-    top: 27%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-}
 
+.title-overlay,
+.subtitle-overlay,
+.title-overlay-2,
+.description-overlay,
+.description-overlay-2,
+.buy-overlay,
 .buy-overlay-2 {
-    display: flex;
-    flex-direction: row;
     position: absolute;
-    top: 34%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    color: #2667ff;
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
 }
 
-.subtitle-overlay {
-    position: absolute;
-    top: 21%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #d90429;
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
+/* Position and style these elements according to your design */
+
+
+/* Mobile view */
+@media screen and (max-width: 767px) {
+    .overlay-text {
+        position: absolute;
+        top: 15%; /* Center vertically. Adjust as needed */
+        left: 50%; /* Center horizontally. Adjust as needed */
+        transform: translate(-50%, -50%); /* Ensures the text is centered */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .overlay-text-2 {
+        position: absolute;
+        top: 25%; /* Center vertically. Adjust as needed */
+        left: 50%; /* Center horizontally. Adjust as needed */
+        transform: translate(-50%, -50%); /* Ensures the text is centered */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .overlay-text-3 {
+        position: absolute;
+        top: 22%; /* Center vertically. Adjust as needed */
+        left: 50%; /* Center horizontally. Adjust as needed */
+        transform: translate(-50%, -50%); /* Ensures the text is centered */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: 45px;
+    }
+
+    #navbar {
+        width: 100vw; /* Full width in mobile view */
+    }
+
+    #navigation-link-container {
+        display: none; /* Hide navbar links */
+    }
+    
+    .hamburger-icon {
+        display: block; /* Show hamburger icon */
+    }
+        
+    /* You may need to add color, padding, backgrounds etc. to the text for visibility */
+    .promotion-product-heading {
+        display: flex;
+        justify-content: center;
+        color: #363636;
+        font-size: 35px;
+        width: 90vw;
+        font-weight: 600; 
+    }
+
+    .promotion-product-description {
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        width: 90vw;
+        font-weight: 400;
+        color: #000000;
+    }
+
+    .promotion-product-heading-dark {
+        font-size: 35px;
+        height: auto;
+        font-weight: 600; 
+        color: #fff;
+    }
+
+    .promotion-product-description-dark {
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+    }
+    #main-promotion-img {
+        height: 420px;
+        width: 100vw;
+    }
+
+    #buy-link-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #2667ff;
+        font-weight: 200;
+        padding-top: 10px;
+        width: 100vw;
+    }    
+    #buy-links {
+        margin-right: 30px;
+    }
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+    .title-overlay {
+        top: 15%;
+        left: 50%;
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+        transform: translate(-50%, -50%);
+    }
+    .title-overlay-2 {
+        top: 15%;
+        left: 50%;
+        font-size: 30px;
+        font-weight: 600;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    
+    .description-overlay {
+        top: 23%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    
+    .description-overlay-2 {
+        top: 27%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    .buy-overlay {
+        top: 31%;
+        left: 50%;
+        color: #2667ff;
+        width: 190px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        transform: translate(-50%, -50%);
+        font-size: large;
+    }
+    .buy-overlay-2 {
+        top: 35%;
+        left: 50%;
+        color: #2667ff;
+        width: 190px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        transform: translate(-50%, -50%);
+        font-size: large;
+    }
+    .multiple-column-img {
+        width: 100vw;
+        height: 420px;
+    }
+    .multiple-column-promotion-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .subtitle-overlay {
+        color: red;
+        top:22%;
+        left: 50%;
+        font-size: 12px;
+        font-weight: 600px;
+        transform: translate(-50%, -50%);
+    }
 }
 
-.title-overlay-dark {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-}
 
-.apple-logo-for-devices {
-    height: 28px;
-    width: 28px;
-}
 
-.description-overlay-2-dark {
-    position: absolute;
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
+/* Desktop view */
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 45px;
+        position: sticky;
+        top: 0;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75vw; /* 65% width in desktop view */
+    }
+
+    #navigation-link-container {
+        display: flex; /* Show navbar links */
+        align-items: center;
+        justify-content: space-between; /* Space out links */
+        color: #363636;
+        text-decoration: none;
+        font-size: 12px;
+        width: 60vw;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .navbar-link {
+        color: #363636;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .hamburger-icon {
+        display: none; /* Hide hamburger icon */
+    }
+        
+    /* You may need to add color, padding, backgrounds etc. to the text for visibility */
+    .promotion-product-heading {
+        color: #363636;
+        font-size: 50px;
+        font-weight: 600; 
+    }
+
+    .promotion-product-description {
+        font-size: 25px;
+        font-weight: 400;
+        color: #000000;
+    }
+
+    #main-promotion-img {
+        height: 620px;
+        width: 100vw;
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 20%; /* Center vertically. Adjust as needed */
+        left: 50%; /* Center horizontally. Adjust as needed */
+        transform: translate(-50%, -50%); /* Ensures the text is centered */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    } 
+    
+    .overlay-text-2 {
+        position: absolute;
+        top: 20%; /* Center vertically. Adjust as needed */
+        left: 50%; /* Center horizontally. Adjust as needed */
+        transform: translate(-50%, -50%); /* Ensures the text is centered */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    } 
+
+    #buy-link-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #2667ff;
+        font-weight: 200;
+        padding-top: 10px;
+        width: 100vw;
+    }
+    #buy-links {
+        font-size: large;
+        margin-right: 40px;
+        width: 110px;
+    }
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    .overlay-text-3 {
+        position: absolute;
+        top: 22%; /* Center vertically. Adjust as needed */
+        left: 50%; /* Center horizontally. Adjust as needed */
+        transform: translate(-50%, -50%); /* Ensures the text is centered */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .promotion-product-heading-dark {
+        font-size: 50px;
+        height: auto;
+        font-weight: 600; 
+        color: #fff;
+    }
+
+    .promotion-product-description-dark {
+        font-size: 25px;
+        font-weight: 400;
+        color: #fff;
+    }
+    #ipad-promotion-gif {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* adjust this value according to your needs */
+        object-fit: cover;
+        object-position: center;
+    }
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    .title-overlay {
+        top: 15%;
+        left: 50%;
+        font-size: 50px;
+        font-weight: 600;
+        color: white;
+        transform: translate(-50%, -50%);
+    }
+    .title-overlay-2 {
+        top: 15%;
+        left: 50%;
+        font-size: 50px;
+        font-weight: 600;
+        color: white;
+        transform: translate(-50%, -50%);
+    }
+
+    .description-overlay {
+        top: 22%;
+        left: 50%;
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+        transform: translate(-50%, -50%);
+    }
+    .description-overlay-2 {
+        top: 27%;
+        left: 50%;
+        color: white;
+        font-size: 20px;
+        transform: translate(-50%, -50%);
+        font-weight: 400;
+    }
+
+    .subtitle-overlay {
+        color: red;
+        top:22%;
+        left: 50%;
+        font-size: 14px;
+        font-weight: 400px;
+        transform: translate(-50%, -50%);
+    }
+    
+    .buy-overlay {
+        top: 30%;
+        left: 50%;
+        color: #2667ff;
+        width: 190px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        transform: translate(-50%, -50%);
+        font-size: large;
+    }
+    .buy-overlay-2 {
+        top: 33%;
+        left: 50%;
+        color: #2667ff;
+        width: 190px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        transform: translate(-50%, -50%);
+        font-size: large;
+    }   
+
+    .multiple-column-img {
+        width: calc(50vw - 20px);
+        height: 580px;
+    }
+    .multiple-column-promotion-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
 }

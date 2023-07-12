@@ -1,0 +1,293 @@
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0px;
+    font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #f9f9fb;
+    height: 45px;
+    
+}
+
+.apple-logo {
+    height: 17px;
+    width: 17px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65vw;
+    margin: auto;
+}
+
+.navbar-link {
+    color: #363636;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.promotion-text-container-light{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    height: 620px;
+    width: 100vw;
+    font-weight:900;
+    background-color: #f5f5f7;
+    margin-bottom: 10px;
+}
+
+.promotion-product-heading {
+    font-weight: bold;
+}
+
+#main-promotion-img {
+    height: px;
+    width: 100vw;
+}
+
+.promotion-product-heading {
+    font-size: 50px;
+    height: auto;
+    font-weight: 600; 
+    color: #000000;
+}
+.promotion-product-description {
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000;
+}
+
+#buy-link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #2667ff;
+    font-weight: 200;
+    padding-top: 10px;
+    width: 100vw;
+}
+
+#buy-links {
+    font-size: larger;
+    margin-right: 40px;
+}
+
+#ipad-promotion-img {
+    height: 280px;
+    width: 100vw;
+}
+
+.promotion-text-container-dark{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 80px;
+    margin: auto;
+    align-items: center;
+    height: 620px;
+    width: 100vw;
+    font-weight:900;
+    background-color: black;
+    color:white;
+    margin-bottom: 10px;
+}
+#iphone-promotion-img {
+    height: 400px;
+}
+
+.promotion-product-heading-dark {
+    font-size: 50px;
+    height: auto;
+    font-weight: 600; 
+    color: #fff;
+}
+.promotion-product-description-dark {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.multiple-column-promotion-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    height: 550px;
+    font-weight:900;
+    width: calc(100vw - 20px);
+    color:white;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.left-promotion {
+    height: 550px;
+    width: 49vw;
+    position: relative;
+
+}
+
+.right-promotion {
+    height: 550px;
+    width: 49vw;    
+    position: relative;
+}
+
+.multiple-column-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+.title-overlay {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+.description-overlay {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.buy-overlay {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 28%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    color: #2667ff;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.subtitle-overlay {
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d90429;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.title-overlay-2 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.description-overlay-2 {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.buy-overlay-2 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 34%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    color: #2667ff;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.subtitle-overlay {
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d90429;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.title-overlay-dark {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.apple-logo-for-devices {
+    height: 28px;
+    width: 28px;
+}
+
+.description-overlay-2-dark {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
