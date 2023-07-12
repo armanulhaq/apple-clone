@@ -396,11 +396,12 @@ header {
         padding-top: 10px;
         width: 100vw;
     }
+
     #buy-links {
-        font-size: large;
-        margin-right: 40px;
         width: 110px;
+        margin-right: 40px;
     }
+
     .desktop {
         display: block;
     }
@@ -489,7 +490,7 @@ header {
     }
     
     .buy-overlay {
-        top: 30%;
+        top: 28%;
         left: 50%;
         color: #2667ff;
         width: 190px;
@@ -497,7 +498,6 @@ header {
         flex-direction: row;
         justify-content: space-around;
         transform: translate(-50%, -50%);
-        font-size: large;
     }
     .buy-overlay-2 {
         top: 33%;
@@ -508,7 +508,6 @@ header {
         flex-direction: row;
         justify-content: space-around;
         transform: translate(-50%, -50%);
-        font-size: large;
     }   
 
     .multiple-column-img {
