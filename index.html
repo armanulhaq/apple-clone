@@ -86,7 +86,7 @@
         <img class="multiple-column-img desktop" src="/images/ipad-pro-lineup-desktop.jpg" alt="">
         <img class="multiple-column-img mobile" src="/images/ipad-pro-lineup-mobile.jpg" alt="">
         <div class="title-overlay">iPad Pro</div>
-        <div class="description-overlay">Supercharged with M2</div>
+        <div class="description-overlay" style="color: white;">Supercharged with M2</div>
         <div class="buy-overlay">
             <div class="buy-links">Learn More ></div>
             <div class="buy-links">Buy ></div>
@@ -97,7 +97,7 @@
         <a href="#" class="image-link">
         <img class="multiple-column-img desktop" src="/images/watch-desktop.jpg" alt="">
         <img class="multiple-column-img mobile" src="/images/watch-mobile.jpg" alt="">
-        <div class="title-overlay-2">Apple Watch</div>
+        <div class="title-overlay">Apple Watch</div>
         <div class="subtitle-overlay">SERIES 8</div>
         <div class="description-overlay-2">A healthy leap ahead.</div>
         <div class="buy-overlay-2">
@@ -106,30 +106,32 @@
         </div>
         </a>
     </div>
-</div>
+    </div>
+    <div class="multiple-column-promotion-container">
+        <div class="promotion-1">
+            <a href="#" class="image-link">
+            <img class="multiple-column-img desktop" src="/images/trade-in-mobile.jpg" alt="">
+            <img class="multiple-column-img mobile" src="/images/trade-in-mobile.jpg" alt="">
+            <div class="title-overlay-2">Trade In</div>
+            <div class="description-overlay">Upgrade and save. It's that easy.</div>
+            <div class="buy-overlay-3">
+                <div class="buy-links">See what your device is worth ></div>
+            </div>
+            </a>
+        </div>
+        <div class="promotion-2">
+            <a href="#" class="image-link">
+            <img class="multiple-column-img desktop" src="/images/homepod.jpg" alt="">
+            <img class="multiple-column-img mobile" src="/images/homepod.jpg" alt="">
+            <div class="title-overlay" style="color: white;">Homepod</div>
+            <div class="description-overlay" style="color: white;">Profound sound.</div>
+            <div class="buy-overlay">
+                <div class="buy-links">Learn More ></div>
+                <div class="buy-links">Buy ></div>
+            </div>
+            </a>
+        </div>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-    var hamburgerIcon = document.querySelector('.hamburger-icon');
-    var mobileMenu = document.querySelector('.mobile-menu');
-    var body = document.querySelector('body');
-
-    // Toggle mobile menu when hamburger icon is clicked
-    hamburgerIcon.addEventListener('click', function () {
-        mobileMenu.classList.toggle('active');
-
-        // Disable scrolling of the body when the menu is active
-        body.classList.toggle('disable-scrolling');
-    });
-
-    // Close mobile menu when a menu item is clicked
-    var menuItems = mobileMenu.querySelectorAll('a');
-    menuItems.forEach(function (menuItem) {
-            menuItem.addEventListener('click', function () {
-            mobileMenu.classList.remove('active');
-            body.classList.remove('disable-scrolling');
-            });
-        });
-        });
     document.addEventListener("DOMContentLoaded", function () {
         const menuIcon = document.querySelector(".hamburger-icon");
         const mobileMenu = document.querySelector(".mobile-menu");
@@ -137,13 +139,11 @@
 
         menuIcon.addEventListener("click", function () {
             mobileMenu.classList.add("active");
+        });
+        closeIcon.addEventListener("click", function () {
+            mobileMenu.classList.remove("active");
+        });
     });
-
-    closeIcon.addEventListener("click", function () {
-        mobileMenu.classList.remove("active");
-    });
-    });
-
 </script>
     
 </body>

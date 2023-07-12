@@ -89,7 +89,9 @@ header {
 }
 
 
-
+.multiple-column-promotion-container {
+    margin-bottom: 10px;
+}
 
 .image-link {
     position: relative;
@@ -104,9 +106,11 @@ header {
 .description-overlay,
 .description-overlay-2,
 .buy-overlay,
-.buy-overlay-2 {
+.buy-overlay-2,
+.buy-overlay-3  {
     position: absolute;
 }
+
 .hamburger-icon {
     display: block;
     cursor: pointer;
@@ -278,8 +282,8 @@ header {
         left: 50%;
         font-size: 30px;
         font-weight: 600;
-        color: white;
         transform: translate(-50%, -50%);
+        color: white;
     }
     .title-overlay-2 {
         top: 15%;
@@ -287,14 +291,17 @@ header {
         font-size: 30px;
         font-weight: 600;
         transform: translate(-50%, -50%);
-        color: white;
+        color: black;
     }
     
     .description-overlay {
         top: 23%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: white;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        color: black;
     }
     
     .description-overlay-2 {
@@ -325,6 +332,16 @@ header {
         justify-content: space-around;
         transform: translate(-50%, -50%);
         font-size: large;
+    }
+    .buy-overlay-3 {
+        top: 29%;
+        left: 50%;
+        color: #2667ff;
+        width: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        transform: translate(-50%, -50%);
     }
     .multiple-column-img {
         width: 100vw;
@@ -477,6 +494,10 @@ header {
         margin-right: 40px;
     }
 
+    .buy-links-2 {
+        width: 300px;
+        margin-right: 40px;
+    }
     .desktop {
         display: block;
     }
@@ -494,6 +515,23 @@ header {
         flex-direction: column;
         align-items: center;
     }
+
+    .buy-overlay-3 {
+        position: absolute;
+        top: 26%; /* Adjust the distance from the bottom as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        color: #2667ff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: large;
+      }
+      
+      .buy-overlay-3 > div {
+        margin-bottom: 10px;
+      }
+      
     .promotion-product-heading-dark {
         font-size: 50px;
         height: auto;
@@ -521,15 +559,15 @@ header {
         display: none;
     }
     
-    .title-overlay {
+    .title-overlay-2 {
         top: 15%;
         left: 50%;
         font-size: 50px;
         font-weight: 600;
-        color: white;
+        color: black;
         transform: translate(-50%, -50%);
     }
-    .title-overlay-2 {
+    .title-overlay {
         top: 15%;
         left: 50%;
         font-size: 50px;
@@ -541,7 +579,7 @@ header {
     .description-overlay {
         top: 22%;
         left: 50%;
-        color: white;
+        color: black;
         font-weight: 400;
         font-size: 20px;
         transform: translate(-50%, -50%);
@@ -594,6 +632,6 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 10px;
     }
 }
